@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RadioGroupSemanaConSpinner</string>
+    <string name="mensajeSaludo">Bienvenido al &#8230; %1$s POR LA %2$s</string>
+    <string name="mensajeBienvenida">Bienvenido al &#8230;</string>
+    <string name="cadDia1">Lunes</string>
+    <string name="cadDia2">Martes</string>
+    <string name="cadDia3">Miércoles</string>
+    <string name="cadDia4">Jueves</string>
+    <string name="cadDia5">Viernes</string>
+    <string name="cadDia6">Sábado</string>
+    <string name="cadDia7">Domingo</string>
+</resources>

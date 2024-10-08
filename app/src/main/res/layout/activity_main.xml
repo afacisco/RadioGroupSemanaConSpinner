@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvMensajeBienvenida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mensajeBienvenida"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/rgSemana"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rgSemana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <RadioButton
+            android:id="@+id/rblunes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cadDia1"
+            android:textAllCaps="true"
+            android:textColor="@color/red"
+            android:textStyle="bold"/>
+
+        <RadioButton
+            android:id="@+id/rbmartes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cadDia2"
+            android:textAllCaps="true"
+            android:textColor="@color/red"
+            android:textStyle="bold"/>
+
+        <RadioButton
+            android:id="@+id/rbmiercoles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cadDia3"
+            android:textAllCaps="true"
+            android:textColor="@color/red"
+            android:textStyle="bold"/>
+
+        <RadioButton
+            android:id="@+id/rbjueves"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cadDia4"
+            android:textAllCaps="true"
+            android:textColor="@color/red"
+            android:textStyle="bold"/>
+
+        <RadioButton
+            android:id="@+id/rbviernes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cadDia5"
+            android:textAllCaps="true"
+            android:textColor="@color/red"
+            android:textStyle="bold"/>
+
+        <RadioButton
+            android:id="@+id/rbsabado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cadDia6"
+            android:textAllCaps="true"
+            android:textColor="@color/red"
+            android:textStyle="bold"/>
+
+        <RadioButton
+            android:id="@+id/rbdomingo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cadDia7"
+            android:textAllCaps="true"
+            android:textColor="@color/red"
+            android:textStyle="bold"/>
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgSemana"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
